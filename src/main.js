@@ -1,11 +1,7 @@
-const Discord = require('discord.js');
-
-const client = new Discord.Client({
-  fetchAllMembers: true,
-  disableEveryone: true
-});
+const client = require('./client');
 
 client.on('ready', () => {
   console.log(`${client.user.tag} is ready.`);
 });
+
 
